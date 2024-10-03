@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bem-vindo!</h1>
+    <p>Digite seu nome:</p>
+    
+    <!-- Campo de entrada e botão para submeter -->
+    <input type="text" id="entradaTexto" placeholder="Seu nome">
+    <button onclick="exibirTexto()">Clique aqui</button> 
+    
+    <p id="mensagem">Por favor, insira seu nome.</p>
+    <script>
+      function exibirTexto() {
+       let texto = document.getElementById("entradaTexto").value;
+       document.getElementById("mensagem").innerHTML = "Olá, " + texto + " ! Seja bem-vindo a página do Ana beatriz";
+      }
+    </script>
+</body>
+</html>
+body{
+    font-family: Times New Roman;
+    text-align: center;
+    margin-top: 50px;
+}
+input {
+    padding: 10px;
+    font-size: 18px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+#mensagem {
+  font-size: 24px;
+  color: #333;
+  margin-top: 20px;
+}
